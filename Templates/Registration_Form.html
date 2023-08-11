@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>FormFilling</title>
+{% endblock%}
+
+{% block body%}
+    <h2>Registration</h2>
+    <form action="http://127.0.0.1:5000/form" method="post">
+        <p>Enter Firstname:</p>
+        <p><input type="text" name="Fname"  size="20" maxlength="6"/></p>
+        <p>Enter Lasttname:</p>
+        <p><input type="text" name="lname"  size="20" maxlength="6"/></p>
+        <h4>Gender</h4>
+        <p><input type="radio" name="Gender" />Male</p>
+        <p><input type="radio" name="Gender" />Female</p>
+        <p>Age:</p>
+        <p><input type="text" name="Age"  size="20" maxlength="6"/></p>
+        <p>Mobile.No:</p>
+        <p><input type="text" name="ph.no"  size="20" maxlength="10"/></p>
+        <p>Enter Username:</p>
+        <p><input type="text" name="Username"  size="20" maxlength="10"/></p>
+        <p>Enter Password:</p>
+        <p><input type="password" name="password" size="20" maxlength="8"/></p>
+        <p>Enter Confirm Password:</p>
+        <p><input type="password" name="password" size="20" maxlength="6"/></p>
+        <p><input type="submit" name="submit"/></p>
+</form>
+{% endblock %}
